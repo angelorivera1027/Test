@@ -5,12 +5,6 @@
   */
 /*******************************  History ************************************************
     Date                User                                        Comments
-    28/09/2015          nandan.narasappa@auspost.com.au             Added validateCase method
-    29/09/2015          nandan.narasappa@auspost.com.au             Added detectPermanentSpam, closeChildCases, avoidCustomerClose 
-                                                                    setOwnerToCurrentUser , setArticlesSubscribed & linkCaseToArticles methods
-    17/11/2015          nandan.narasappa@auspost.com.au             Added routeCase method   
-    20/01/2016          nandan.narasappa@auspost.com.au             updated linkCaseToArticles to skip API call for unknown articles    
-    14/04/2016          cliew@salesforce.com                        Added entry to CUST_TYPE_QUEUE_MAP for supporting new Customer Type (Case)
     15/05/2017          angelo.rivera@auspost.com.au 				Added API for handling SNAP IT cases
 *******************************  History ************************************************/
 public with sharing class CaseCommonUtility{
