@@ -5,21 +5,7 @@
   */
 /*******************************  History ************************************************
     Date                User                                        Comments
-    28/09/2015          nandan.narasappa@auspost.com.au             Added validateCase method
-    29/09/2015          nandan.narasappa@auspost.com.au             Added detectPermanentSpam, closeChildCases, avoidCustomerClose 
-                                                                    setOwnerToCurrentUser , setArticlesSubscribed & linkCaseToArticles methods
-    17/11/2015          nandan.narasappa@auspost.com.au             Added routeCase method   
-    20/01/2016          nandan.narasappa@auspost.com.au             updated linkCaseToArticles to skip API call for unknown articles    
-    14/04/2016          cliew@salesforce.com                        Added entry to CUST_TYPE_QUEUE_MAP for supporting new Customer Type (Case)
-                                                                    / Service SLA (Account) introduced as part of MyPost Business Portal implementation
-    25/08/2016          david.e.catindoy@accenture.com              Added closeRelatedTasksAndWFEmails method to cater additional processes on StarTrack closed cases.
-    29/08/2016          eric.shen@auspost.com.au                    Add the logic in routeCase that DefaultCaseDetails fields will be appended to case description when case description is empty or a new case, bug fix for INC0699609
-    06/09/2016          eric.shen@auspost.com.au                    Create a new method to call linkCaseToArticles method to be used in Snap It case for Missing Item enquiry.
-    12/10/2016          david.e.catindoy@accenture.com              Added notificationAutomationModel method to cater StarTrack automated sending of email and SMS notification.
-    08/03/2017          david.e.catindoy@accenture.com              Transferred closeRelatedTasksAndWFEmails method into StarTrackUtil class to let user close the tasks that they don't own when the parent case record was closed.
-    18/04/2017          ajudd@salesforce.com                        Minor update to notificationAutomationModel to remove SELECT statement
-    12/05/2017          scherukuwada@salesforce.com                 If BSP User created Case, then search for the Article in Salesforce first
-	15/05/2017          angelo.rivera@auspost.com.au 				Added API for handling SNAP IT cases
+    15/05/2017          angelo.rivera@auspost.com.au 				Added API for handling SNAP IT cases
 *******************************  History ************************************************/
 public with sharing class CaseCommonUtility{
     
